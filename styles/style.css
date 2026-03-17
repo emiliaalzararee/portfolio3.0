@@ -1,27 +1,20 @@
-
 * {
-
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-  
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.6;
     padding: 20px;
     background-color: rgb(2, 2, 2);
     color: bisque;
-    
-
 }
-
 
 h1 {
     color: rgb(222, 175, 128);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-
 }
 
 h2 {
@@ -34,65 +27,58 @@ p {
     font-size: 18px;
 }
 
-
 img {
-  border-radius: 12px;
-  width: 100%;
-  max-width: 290px;
-  height: auto;
-  object-fit: cover;
-  transition: transform 0.3s ease;  
+    border-radius: 12px;
+    width: 100%;
+    max-width: 290px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;  
 }
 
-
 nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(3, 3, 2);
-  padding: 20px;
-  font-size: 30px;
-  top: 0;
- 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(3, 3, 2);
+    padding: 20px;
+    font-size: 30px;
+    top: 0;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-
+    list-style: none;
+    display: flex;
 }
 
 nav li {
-  margin: 0 10px;
+    margin: 0 10px;
 }
 
 nav a {
-  color:rgb(222, 175, 128);
-  text-decoration: none;
-  font-weight: bold;
-  font-style: oblique;
-  text-shadow: 2px 2px 3px rgba(240, 238, 234, 0.3);
-  transition: color 0.3s ease, transform 0.3s ease;
+    color: rgb(222, 175, 128);
+    text-decoration: none;
+    font-weight: bold;
+    font-style: oblique;
+    text-shadow: 2px 2px 3px rgba(240, 238, 234, 0.3);
+    transition: color 0.3s ease, transform 0.3s ease;
 }
-
-
 
 nav a:hover {
     color: rgb(63, 36, 2);
     transform: scale(1.1);
 }
 
-
 #home {
-  display: flex;            
-  align-items: center;        
-  gap: 30px;                  
-  padding: 20px;
-  background-color: rgb(19, 10, 0);
-  width: 700px;
-  border-radius: 20px;
-  box-shadow: rgb(63, 36, 2) 20px 2px 150px;
-  margin: 40px auto;
+    display: flex;            
+    align-items: center;        
+    gap: 30px;                  
+    padding: 20px;
+    background-color: rgb(19, 10, 0);
+    width: 700px;
+    border-radius: 20px;
+    box-shadow: rgb(63, 36, 2) 20px 2px 150px;
+    margin: 40px auto;
 }
 
 #home p {
@@ -100,15 +86,15 @@ nav a:hover {
     color: rgb(222, 175, 128);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
+
 #home h1 {
     font-size: 32px;
 }
 
 #home:hover {
     transform: scale(1.05); 
-    image-rendering: crisp-edges;
-    size: larger;
 }
+
 #PROJECTS, #contact {
     background-color: rgb(19, 10, 0);
     padding: 20px;
@@ -211,7 +197,6 @@ nav a:hover {
 }
 
 .project-card {
-    
     background-color: rgb(30, 15, 5);
     border: 2px solid rgb(222, 175, 128);
     border-radius: 10px;
@@ -249,24 +234,15 @@ nav a:hover {
     margin: 0;
 }
 
-
-#home, #contact, #PROJECTS {
-    margin: 90px auto
-}
-
 section {
     margin: 40px auto;
     align-items: center;
     border-radius: 20px;
-   
 }
 
-
 form {
-    text-decoration: dashed;
     font-size: medium;
     width: 100%;
-    
 }
 
 label {
@@ -278,18 +254,15 @@ label {
 
 input,
 textarea {
-    
     width: 100%;
     padding: 10px; 
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-
 }
 
 button,
 input[type="submit"] {
-   
     background-color: rgb(222, 175, 128);
     color: rgb(3, 3, 2);
     border: none;
@@ -298,7 +271,6 @@ input[type="submit"] {
     font-size: 16px;
     border-radius: 5px;
     transition: color 0.3s ease, background-color 0.3s ease, font-size 0.3s ease;
-
 }
 
 button:hover,
@@ -314,9 +286,7 @@ footer {
     background-color: rgb(3, 3, 2);
     color: rgb(222, 175, 128);
     margin-top: 20px;
-    
 }
-
 
 #overlay {
     display: none;
@@ -346,229 +316,6 @@ footer {
     border: 2px solid rgb(222, 175, 128);
 }
 
-.overlay-content h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
-}
-
-.overlay-content p {
-    margin-bottom: 25px;
-    font-size: 16px;
-    line-height: 1.8;
-    color: bisque;
-}
-
-.language-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-
-.language-icon {
-    width: 60px;
-    height: 60px;
-    transition: transform 0.3s ease;
-    border-radius: 8px;
-}
-
-.language-icon:hover {
-    transform: scale(1.2) rotate(5deg);
-}
-
-.overlay-close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background-color: transparent;
-    color: rgb(222, 175, 128);
-    border: 2px solid rgb(222, 175, 128);
-    width: auto;
-    height: auto;
-    padding: 5px 10px;
-    border-radius: 0;
-    font-size: 20px;
-    cursor: pointer;
-    transition: color 0.3s ease, border-color 0.3s ease;
-}
-
-.overlay-close:hover {
-    color: rgb(63, 36, 2);
-    border-color: rgb(63, 36, 2);
-}
-
-
-.project-buttons {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.project-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 20px 0;
-    flex-wrap: wrap;
-}
-
-.project-icon {
-    width: 50px;
-    height: 50px;
-    transition: transform 0.3s ease;
-    border-radius: 5px;
-}
-
-.project-icon:hover {
-    transform: scale(1.15) rotate(5deg);
-}
-
-.project-btn {
-    padding: 12px 24px;
-    border: 2px solid rgb(222, 175, 128);
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-.github-btn {
-    color: rgb(222, 175, 128);
-    background-color: transparent;
-}
-
-.github-btn:hover {
-    background-color: rgb(222, 175, 128);
-    color: rgb(19, 10, 0);
-}
-
-.live-btn {
-    color: rgb(222, 175, 128);
-    background-color: transparent;
-}
-
-.live-btn:hover {
-    background-color: rgb(222, 175, 128);
-    color: rgb(19, 10, 0);
-}
-
-.coming-soon {
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(222, 175, 128);
-    text-align: center;
-}
-
-/* Certificates Styles */
-.certificates-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.carousel-container {
-    width: 100%;
-    margin: 30px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 0;
-    position: relative;
-}
-
-.carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    perspective: 1000px;
-    width: 100%;
-    position: relative;
-    height: 600px;
-    flex-wrap: nowrap;
-}
-
-.carousel-item {
-    background-color: rgb(30, 15, 5);
-    border: 2px solid rgb(222, 175, 128);
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    cursor: pointer;
-    width: 450px;
-    height: auto;
-    opacity: 0;
-    transform: scale(0.85);
-    flex-shrink: 0;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel-item img {
-    max-width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: contain;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.carousel-item.active {
-    opacity: 1;
-    transform: scale(1);
-    display: flex;
-    box-shadow: 0 0 30px rgba(222, 175, 128, 0.5);
-}
-
-.carousel-item.prev,
-.carousel-item.next {
-    opacity: 0;
-    display: none;
-}
-
-.carousel-item:hover {
-    box-shadow: 0 0 20px rgba(222, 175, 128, 0.3);
-}
-
-/* Carousel Navigation Buttons */
-.carousel-btn {
-    background-color: rgb(222, 175, 128);
-    color: rgb(3, 3, 2);
-    border: none;
-    padding: 15px 20px;
-    font-size: 24px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    font-weight: bold;
-}
-
-.carousel-prev {
-    left: 20px;
-}
-
-.carousel-next {
-    right: 20px;
-}
-
-.carousel-btn:hover {
-    background-color: rgb(63, 36, 2);
-    transform: translateY(-50%) scale(1.1);
-}
-
 .carousel-item img {
     width: 100%;
     height: 300px;
@@ -576,94 +323,3 @@ footer {
     border-radius: 8px;
     margin-bottom: 10px;
 }
-
-.carousel-item h3 {
-    color: rgb(222, 175, 128);
-    font-size: 16px;
-    margin: 0;
-}
-
-.certificate-full-img {
-    max-width: 100%;
-    height: auto;
-    max-height: 500px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.certificate-overlay {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-/* Make certificate overlay almost full-screen */
-.certificate-overlay {
-    max-width: 95vw;
-    width: 95vw;
-    max-height: 95vh;
-    height: 95vh;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow: auto;
-}
-
-.certificate-overlay .certificate-full-img {
-    width: auto;
-    max-width: 100%;
-    max-height: calc(95vh - 140px);
-    object-fit: contain;
-}
-
-
-@media (max-width: 768px) {
-    nav ul {
-    flex-direction: column;
-    gap: 15px;  
-    }
-
-  nav {
-    font-size: 22px;
-    padding: 15px;
-  }
-
-  #home {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
-
-  #home img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  #about,
-  #contact {
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-
-  nav {
-    font-size: 18px;
-  }
-
-  h1 {
-    font-size: 22px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  #home,
-  #about,
-  #contact {
-    max-width: 100%;
-  }
-}
-
-  
