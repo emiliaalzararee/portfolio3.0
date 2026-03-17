@@ -301,6 +301,44 @@ footer {
     justify-content: center;
 }
 
+.project-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-btn {
+    padding: 12px 24px;
+    border: 2px solid rgb(222, 175, 128);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.github-btn {
+    color: rgb(222, 175, 128);
+    background-color: transparent;
+}
+
+.github-btn:hover {
+    background-color: rgb(222, 175, 128);
+    color: rgb(19, 10, 0);
+}
+
+.live-btn {
+    color: rgb(222, 175, 128);
+    background-color: transparent;
+}
+
+.live-btn:hover {
+    background-color: rgb(222, 175, 128);
+    color: rgb(19, 10, 0);
+}
+
 #overlay.active {
     display: flex;
 }
