@@ -70,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
 // ===============================
 // HOME OVERLAY
 // ===============================
-
 function createHomeOverlay() {
 
     const overlay = document.getElementById('overlay');
@@ -85,7 +84,25 @@ function createHomeOverlay() {
 
     const text = document.createElement('p');
     text.textContent =
-        'IT student focused on full stack development and clean design.';
+        'I’m an aspiring full stack developer passionate about building functional and user-focused applications. I enjoy working on projects that challenge me and help me grow, while continuously improving my problem-solving skills and understanding of modern development.';
+
+    // ✅ ICON CONTAINER
+    const icons = document.createElement('div');
+    icons.className = 'icons';
+
+    icons.innerHTML = `
+        <i class="devicon-javascript-plain"></i>
+        <i class="devicon-css3-plain"></i>
+        <i class="devicon-html5-plain"></i>
+        <i class="devicon-github-original"></i>
+        <i class="devicon-vscode-plain"></i>
+        <i class="devicon-python-plain"></i>
+        <i class="devicon-csharp-plain"></i>
+        <i class="devicon-php-plain"></i>
+        <i class="devicon-mysql-plain"></i>
+        <i class="devicon-mongodb-plain"></i>
+        <i class="devicon-react-original"></i>
+    `;
 
     const closeBtn = document.createElement('button');
     closeBtn.textContent = '✕';
@@ -94,10 +111,12 @@ function createHomeOverlay() {
 
     content.appendChild(title);
     content.appendChild(text);
+    content.appendChild(icons); // 👈 icons go here (under text)
     content.appendChild(closeBtn);
 
     overlay.appendChild(content);
 }
+
 
 
 // ===============================

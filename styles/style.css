@@ -120,7 +120,7 @@ nav a:hover {
     padding: 20px;
     background-color: rgb(19, 10, 0);
     border-radius: 20px;
-    box-shadow: rgb(63, 36, 2) 20px 2px 150px;
+    border: 2px solid rgb(222, 175, 128);
     cursor: pointer;
     transition: transform 0.3s ease;
     text-align: center;
@@ -163,7 +163,7 @@ nav a:hover {
 
 .course-item:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(222, 175, 128, 0.3);
+    box-shadow: 0 0 20px ;
 }
 
 .course-item h3 {
@@ -176,14 +176,6 @@ nav a:hover {
     color: rgb(200, 150, 100);
     font-size: 14px;
     font-style: italic;
-}
-
-#certificates {
-    background-color: rgb(19, 10, 0);
-    padding: 20px;
-    box-shadow: rgb(63, 36, 2) 20px 2px 150px;
-    width: 670px;
-    margin: 40px auto;
 }
 
 .projects-container {
@@ -360,4 +352,22 @@ footer {
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 10px;
+}
+
+.icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 42px;
+}
+
+.icons i {
+  transition: all 0.3s ease;
+}
+
+.icons i:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 8px currentColor);
 }
